@@ -1,0 +1,78 @@
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-image: url("./assets/pattern.svg");
+  background-position: center;
+  background-repeat: repeat;
+  max-height: 100vh;
+}
+
+.aside {
+  background-color: #111111;
+  max-width: 76px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  border-right: 0.5px solid #ffffff0f;
+
+  button {
+    padding: 4px 10px;
+    width: 100%;
+    height: 58px;
+    opacity: 0.5;
+    border: none;
+    background: none;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  button:nth-child(4) {
+    border-bottom: 2px solid #ffffff0f;
+  }
+
+  button:last-child {
+    margin: auto 0 0 0;
+  }
+}
+
+.chats {
+  display: flex;
+  flex-direction: column;
+  background-color: #111111;
+  min-width: 400px;
+  border-right: 0.5px solid #ffffff0f;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.chat-content-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
+.react-logo {
+  width: 40px;
+  margin: 20px auto;
+}
